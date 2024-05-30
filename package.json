@@ -1,9 +1,10 @@
 {
   "name": "css-frameworks-ca",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Test",
   "main": "index.js",
   "scripts": {
+    "test-unit": "jest",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
@@ -15,8 +16,12 @@
   "author": "Noroff",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
     "eslint": "^8.57.0",
+    "eslint-plugin-jest": "^28.5.0",
     "husky": "^9.0.11",
+    "jest": "^29.2.0",
     "lint-staged": "^15.2.5",
     "live-server": "^1.2.2",
     "prettier": "^3.2.5",
