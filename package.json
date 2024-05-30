@@ -1,9 +1,10 @@
 {
   "name": "css-frameworks-ca",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test",
   "main": "index.js",
   "scripts": {
+    "format": "prettier -w src/**/*.js",
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server"
   },
@@ -12,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.2",
+    "prettier": "^3.2.5",
     "sass": "^1.54.8"
   },
   "dependencies": {
