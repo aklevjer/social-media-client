@@ -4,6 +4,7 @@
   "description": "Test",
   "main": "index.js",
   "scripts": {
+    "test-unit": "jest",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
