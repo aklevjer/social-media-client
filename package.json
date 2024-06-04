@@ -1,6 +1,6 @@
 {
   "name": "css-frameworks-ca",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Test",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
     "cypress": "^13.10.0",
+    "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-plugin-cypress": "^3.3.0",
     "eslint-plugin-jest": "^28.5.0",
