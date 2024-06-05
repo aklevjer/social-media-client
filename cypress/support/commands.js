@@ -30,17 +30,22 @@ Cypress.Commands.add("visitHome", () => {
 });
 
 Cypress.Commands.add("login", (email, password) => {
+  cy.intercept("POST", "**/auth/login").as("login");
+
   cy.get("#registerForm button[data-auth='login']").click();
   cy.wait(500);
 
   cy.get("#loginForm input[type='email']").type(email);
   cy.get("#loginForm input[type='password']").type(password);
   cy.get("#loginForm button[type='submit']").click();
-  cy.wait(1500);
+
+  cy.wait("@login");
+  cy.wait(500);
 });
 
 Cypress.Commands.add("logout", () => {
   cy.get("button[data-auth='logout']").click();
+  cy.wait(500);
 });
 
 Cypress.Commands.add("isLoggedIn", () => {
